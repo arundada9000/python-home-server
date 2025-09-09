@@ -1,0 +1,4 @@
+qrcode[pil]
+psutil
+websockets
+zeroconf
