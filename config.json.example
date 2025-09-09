@@ -1,0 +1,19 @@
+{
+  "admin_key": "CHANGE_THIS_TO_A_SECRET_KEY",
+  "port": 4142,
+  "upload_root": "Home",
+  "hidden_folders": [
+    "images",
+    ".recycle_bin",
+    "server-icons",
+    "useful-info",
+    ".collaborative",
+    "commands"
+  ],
+  "aliases": [
+    "sajilo",
+    "server",
+    "arun",
+    "arundada9000"
+  ]
+}
