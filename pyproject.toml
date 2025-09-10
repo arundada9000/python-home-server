@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sajilocloud"
+version = "1.0.0"
+description = "A modern, self-hosted LAN file manager and real-time collaboration server."
+readme = "README.md"
+requires-python = ">=3.7"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Arun Neupane", email = "arunneupane0000@gmail.com" }
+]
+keywords = ["file-manager", "lan-server", "self-hosted", "collaboration", "websocket"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: Other/Proprietary License",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+    "Topic :: System :: Filesystems",
+]
+dependencies = [
+    "qrcode[pil]",
+    "psutil",
+    "websockets",
+    "zeroconf",
+]
+
+[project.urls]
+Homepage = "https://github.com/arundada9000/sajilocloud"
+"Author Website" = "https://arunneupane.vercel.app"
+Company = "https://sajilodigital.com.np"
+
+[tool.setuptools]
+py-modules = [
+    "server",
+    "websocket_server",
+    "api_handlers",
+    "collaborative_manager",
+    "dns_service",
+    "audit_logger",
+    "temp_handler",
+    "server_control_panel",
+]
