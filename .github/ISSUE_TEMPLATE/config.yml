@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+ - name: SajiloCloud documentation
+ url: https://github.com/arundada9000/sajilocloud/tree/main/docs
+ about: Please check the docs (Quickstart, Troubleshooting, FAQ) before opening an issue.
+ - name: Security vulnerability
+ url: https://github.com/arundada9000/sajilocloud/blob/main/SECURITY.md
+ about: Report vulnerabilities privately to the maintainer - do NOT open a public issue.
