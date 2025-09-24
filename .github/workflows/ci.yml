@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  syntax-check:
+    name: Python syntax check (3.10 & 3.12)
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.12", "3.13"]
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Compile all Python modules
+        run: |
+          python -m compileall -q api_handlers.py audit_logger.py collaborative_manager.py dns_service.py server.py websocket_server.py temp_handler.py repro_mdns.py
+
+  dependency-check:
+    name: Dependency sanity
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: |
+          pip install --quiet -r requirements.txt
+
+      - name: Import smoke test (HTTP server stack)
+        run: |
+          python -c "import api_handlers, audit_logger, collaborative_manager, server"
+          python -c "import websocket_server"
