@@ -2,6 +2,9 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.venv/
+venv/
+env/
 
 # -- Logs ------------------------------------------------
 *.log
@@ -42,4 +45,7 @@ Desktop.ini
 
 # -- Editors ---------------------------------------------
 .idea/
+.vscode/
 *.swp
+*.swo
+*~
