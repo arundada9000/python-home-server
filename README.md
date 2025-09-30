@@ -262,5 +262,15 @@ SajiloCloud is **not free for use**. Explicit written permission from the copyri
 ---
 
 <div align="center">
+
+*A cloud so local, it never rains on your files.*
+
+*Take the cloud, put it on your desk, and call it yours.*
+
+</div>
+
+---
+
+<div align="center">
 <sub>Built in Nepal - © 2026 Arun Neupane / Sajilo Digital Pvt. Ltd.</sub>
 </div>
