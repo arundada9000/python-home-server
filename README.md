@@ -18,11 +18,25 @@ SajiloCloud is a **self-hosted, LAN-based file manager and web server** built wi
 
 It gives you a beautiful, responsive interface to **upload, download, rename, move, delete, zip, search, and edit files** directly from your browser, plus a **real-time collaborative whiteboard & scratchpad** for anyone on your network.
 
-> ** Important:** This software is **not free to use**. It is proprietary - every use requires explicit written permission from the copyright holder. See [LICENSE](LICENSE).
+> **Important:** This software is **not free to use**. It is proprietary - every use requires explicit written permission from the copyright holder. See [LICENSE](LICENSE).
+
+---
+
+## Screenshots
+
+**File Manager** - browse, upload, edit, and manage files from any device on your network:
+
+![File Manager](screenshots/file-manager.png)
+
+**Portal Dashboard** - the personal dashboard page:
+
+![Portal](screenshots/portal.png)
 
 ---
 
 ## Table of Contents
+
+- [Screenshots](#screenshots)
 
 - [Features](#features)
 - [Tech Stack](#tech-stack)
